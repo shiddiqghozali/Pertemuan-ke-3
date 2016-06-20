@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int harga_awal, umur, tanggal_lahir;
+    float diskon_umur, diskon_tanggallahir,;
+
+    cout << "Harga Awal HP : ";
+    cin >> harga_awal;
+    cout << "Diskon Umur : ";
+    cin >> umur;
+    cout << "Diskon Tanggal Lahir ; ";
+    cin >> tanggal_lahir;
+    cout <<endl;
+
+    diskon_umur=harga_awal-(harga_awal*umur/100);
+    diskon_tanggallahir=diskon_umur-(diskon_umur*tanggal_lahir/100);
+
+    cout << "Harga Beli = Rp "<<diskon_tanggallahir<<endl;
+
+}
