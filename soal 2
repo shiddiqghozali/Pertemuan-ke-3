@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float p, l, r;
+    double luas1, luas2, luas3;
+
+    cout << "Menghitung Luas Bangun Datar" <<endl;
+    cout << "Panjang = ";
+    cin >>p;
+    cout << "Lebar = ";
+    cin >>l;
+    cout << "Jari-jari = ";
+    cin >>r;
+    cout <<endl;
+
+    luas1=p*l;
+    luas2=(3.14*r*r)/2;
+    luas3=luas1+luas2;
+
+    cout << "Luas Segi Empat = "<<luas1<<endl;
+    cout << "Luas Setengah Lingkaran = "<<luas2<<endl;
+    cout << "Luas Bangun Datar = "<<luas3<<endl;
+}
